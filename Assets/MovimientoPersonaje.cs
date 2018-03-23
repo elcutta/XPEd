@@ -11,6 +11,7 @@ public class MovimientoPersonaje : MonoBehaviour {
     private bool caminando = false;
     private bool corriendo = false;
 
+    private bool chocado = false;
     private bool fin = false;
 
     // Use this for initialization
@@ -45,13 +46,17 @@ public class MovimientoPersonaje : MonoBehaviour {
         float h = Input.GetAxisRaw("Horizontal");
 
         // normalize so going diagonally doesn't speed things up
-        Vector3 direction = new Vector3(h, 1, 0f).normalized;
+        Vector3 direction = new Vector3(h, chocado ? 0 : 1, 0f).normalized;
 
         // translate
         transform.Translate(direction * finalSpeed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        fin = true;
+        chocado = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        chocado = false;
     }
 }
