@@ -1114,7 +1114,7 @@ GameObject:
   - component: {fileID: 651153229}
   - component: {fileID: 651153228}
   m_Layer: 5
-  m_Name: Image
+  m_Name: StressometroRayo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,7 +1157,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 01c58b7122874b44f95c00a9d04e75f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1821e1e63b3b211438831a3d84e161ae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2997,7 +2997,7 @@ GameObject:
   - component: {fileID: 1896712016}
   - component: {fileID: 1896712015}
   m_Layer: 5
-  m_Name: Text
+  m_Name: LabelStress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3019,7 +3019,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 179.9, y: 52.9}
+  m_SizeDelta: {x: 143.2, y: 52.9}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1896712015
 MonoBehaviour:
