@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class MovimientoPersonaje : MonoBehaviour {
+public class Protagonista : Peaton {
 
     public GameObject lineaFin;
 
@@ -15,14 +13,11 @@ public class MovimientoPersonaje : MonoBehaviour {
     private bool fin = false;
 
     // Use this for initialization
-    void Start () {
+    void Start() {
 
     }
 
-    void Update()
-    {
-        // TODO: Para colisiones: https://answers.unity.com/questions/657234/2d-object-collision.html
-
+    void Update() {
         if (fin) {
             return;
         }
